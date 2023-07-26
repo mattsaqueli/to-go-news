@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import getAllNews from '../../ApiCalls';
 import NewsCard from '../NewsCard/NewsCard';
 import Header from '../Header/Header';
+import NewsDetail from '../NewsDetail/NewsDetail';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -18,16 +19,22 @@ function App() {
       });
   }, []);
 
-  const filteredNews = news.filter((article) =>
-    article.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filterNews = () => {
+    return news.filter((article) =>
+      article.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  };
 
   return (
     <BrowserRouter>
-      <main className='App'>
+      <main className="App">
         <Header setSearchQuery={setSearchQuery} />
         <Routes>
-          <Route path='/' element={<NewsCard articles={filteredNews} />} />
+          <Route path="/" element={<NewsCard articles={filterNews()} />} />
+          <Route
+            path="/article/:index"
+            element={<NewsDetail articles={news} />}
+          />
         </Routes>
       </main>
     </BrowserRouter>
