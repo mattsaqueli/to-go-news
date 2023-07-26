@@ -42,3 +42,21 @@ h2 {
 .read-more-link:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1024px) {
+  .news-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .news-card {
+    width: 100%;
+  }
+}
