@@ -6,11 +6,9 @@ const Header = ({ setSearchQuery }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSearch = () => {
-    setSearchQuery(searchTerm);
+    const query = event.target.value;
+    setSearchTerm(query);
+    setSearchQuery(query);
   };
 
   return (
@@ -18,7 +16,7 @@ const Header = ({ setSearchQuery }) => {
       <h1>To-Go News!</h1>
       <nav className='nav-bar'>
         <Link to='/'>
-          <button>Home</button>
+          <button>HOME</button>
         </Link>
         <input
           type='text'
@@ -26,7 +24,6 @@ const Header = ({ setSearchQuery }) => {
           value={searchTerm}
           onChange={handleInputChange}
         />
-        <button onClick={handleSearch}>Search</button>
       </nav>
     </header>
   );
