@@ -12,7 +12,6 @@ const NewsCard = ({ articles }) => {
           </Link>
           <div className="news-details">
             <h2>{article.title}</h2>
-            <p>{article.description}</p>
             <p>Published At: {new Date(article.publishedAt).toLocaleString()}</p>
             <Link to={`/article/${index}`} className="read-more-link">
               Read More
