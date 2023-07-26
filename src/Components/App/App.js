@@ -1,42 +1,39 @@
 import './App.css';
-import React from 'react'
-import { useState, useEffect } from 'react';
-import getAllNews from '../../ApiCalls'
-import { Route, Switch } from 'react-router-dom'
-// import NewsCard from '../NewsCard'
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import getAllNews from '../../ApiCalls';
+import NewsCard from '../NewsCard/NewsCard';
 
 function App() {
-  const [news, setNews] = useState([])
+  const [news, setNews] = useState([]);
 
   useEffect(() => {
     getAllNews()
       .then((data) => {
-        setNews(data.articles)
+        setNews(data.articles);
       })
       .catch((error) => {
-        console.error('Error fetching news:', error)
-      })
-  }, [])
+        console.error('Error fetching news:', error);
+      });
+  }, []);
 
   // console.log(news)
-
   return (
-    <main className="App">
-    {/* <Header /> */}
-    <Switch>
+    <BrowserRouter>
+      <main className="App">
+        {/* <Header /> */}
 
-    <Route 
-      exact path ='/' 
-      render={() => (
-        <NewsCard 
-          articles={news} 
-        />
-      )}
-    />
+        
+        <Routes>
+          <Route
+            path="/"
+            element={<NewsCard articles={news} />}
+          />
 
-    </Switch>
 
-  </main>
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 
