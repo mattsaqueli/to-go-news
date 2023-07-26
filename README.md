@@ -1,70 +1,48 @@
-# Getting Started with Create React App
-test
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# To-Go News!
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+To-Go News was created to simulate a take-home challenge that are usually assigned in the job search process. The main focus points were:
+- A strong understanding of React JS and Front-End best practices
+- Your ability to prioritize for MVP
+- An understanding of basic usability practices and standards
+- A clear hierarchy of information
+- Clean, well thought out code
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Set Up 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installing the files
+ - Fork this repo to your GitHub account. 
+ - In your forked respository, click the `code` drop-down menu and copy the SSH key.
+ - On your local machine, open the terminal and navigate to the location you'd like the repository directory cloned to. 
+ - Once you're there, run `git clone [SSH Key] [to-go-news]` via the command line.
+ - Run `npm install`. 
 
-### `npm test`
+### Opening the application
+ - When you're ready to use the app, open the terminal and navigate to the to-go-news directory via the terminal.
+ - In the terminal, use command+t to open a new terminal tab. 
+ - In the new terminal tab, run `npm start`.
+ - Once WebPack has compiled the necessary resources, you will see a link within the text of your terminal. You can copy and paste that link into your browser to access a locally-hosted version of this application on your machine. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Preview
 
-### `npm run build`
+![to go news gif]([https://github.com/dustingouner/pawsome-connections/assets/117230717/c29bb364-7eda-465e-9b89-d0d1784bf29d](https://media.giphy.com/media/axsKTi9B4IrhFbtZDx/giphy.gif))
+![to go news gif]([https://github.com/dustingouner/pawsome-connections/assets/117230717/c29bb364-7eda-465e-9b89-d0d1784bf29d](https://media.giphy.com/media/UQXPjOsjVbpoEuPK3N/giphy.gif))
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributors
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Matt Saqueli [GitHub](https://github.com/mattsaqueli) | [LinkedIn](https://www.linkedin.com/in/mattsaqueli/)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies/ Metholodologies
+- React & React Router
+- Fetch API
+- Git/GitHub/ GitHub project board
+- Javascript/JSX
+- Responsive design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
