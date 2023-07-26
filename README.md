@@ -28,9 +28,11 @@ To-Go News was created to simulate a take-home challenge that are usually assign
 
 ## Preview
 
-![to go news gif]([https://github.com/dustingouner/pawsome-connections/assets/117230717/c29bb364-7eda-465e-9b89-d0d1784bf29d](https://media.giphy.com/media/axsKTi9B4IrhFbtZDx/giphy.gif))
-![to go news gif]([https://github.com/dustingouner/pawsome-connections/assets/117230717/c29bb364-7eda-465e-9b89-d0d1784bf29d](https://media.giphy.com/media/UQXPjOsjVbpoEuPK3N/giphy.gif))
+![to go news gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG42cDJoNzRhaG56enJ1MW5yZXBvbmgzYXFqYWxqMHdnMmJjajl4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1esBDXYmNRUVTTpCSc/giphy.gif)
+![to go news gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWZucjVncjZ3dHg3NzkwOWlycHY4amZrb3IyMHNxZzNxdDJzaDFoYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SaChf6qolxBSWnYGPH/giphy.gif)
 
+Figma wireframe:
+https://www.figma.com/file/CYQ0vO0IdB3ckET9gl5Z3S/Untitled?type=design&node-id=0-1&mode=design&t=rAmjf06dKYCFumu9-0
 
 ## Contributors
 
