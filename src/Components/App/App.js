@@ -1,11 +1,12 @@
-import './App.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import getAllNews from '../../ApiCalls';
 import NewsCard from '../NewsCard/NewsCard';
+import Header from '../Header/Header';
 
 function App() {
   const [news, setNews] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     getAllNews()
@@ -17,20 +18,16 @@ function App() {
       });
   }, []);
 
-  // console.log(news)
+  const filteredNews = news.filter((article) =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <BrowserRouter>
-      <main className="App">
-        {/* <Header /> */}
-
-        
+      <main className='App'>
+        <Header setSearchQuery={setSearchQuery} />
         <Routes>
-          <Route
-            path="/"
-            element={<NewsCard articles={news} />}
-          />
-
-
+          <Route path='/' element={<NewsCard articles={filteredNews} />} />
         </Routes>
       </main>
     </BrowserRouter>
