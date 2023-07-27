@@ -1,4 +1,5 @@
 import React from 'react';
+import './NewsDetail.css'
 import { useParams } from 'react-router-dom';
 
 const NewsDetail = ({ articles }) => {
@@ -6,7 +7,7 @@ const NewsDetail = ({ articles }) => {
   const article = articles[index];
 
   if (!article) {
-    return <div>Loading...</div>; // You can replace this with a better loading UI
+    return <div>Loading...</div>;
   }
 
   return (
